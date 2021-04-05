@@ -23,7 +23,7 @@
         <div id="logotipo">
             <!--logo django-->
             <img src="{% static 'images/logo.png' %}" alt="" >
-            <h1> Web Proyect Django </h1>
+            <h1> Django Web Proyect </h1>
         </div>
        
     </header>
@@ -35,7 +35,7 @@
             </li>
             {% for page in pages%}
                 <li>
-                    <a href="page"> {{page.1}}</a>
+                    <a href={%url 'page' page.2%}> {{page.1}}</a>
                 </li>
             {% endfor %}
             
