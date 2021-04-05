@@ -26,7 +26,8 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Updated at")
     image = models.ImageField(default="null", verbose_name="Image")
     categorys = models.ManyToManyField(Category, verbose_name="Category")
-    user = models.ForeignKey(User, verbose_name="User", on_delete=models.CASCADE)
+    user = models.ForeignKey(User,editable=False, verbose_name="User", on_delete=models.CASCADE)
+    
     class Meta:
         verbose_name = "Article"
         verbose_name_plural = "Articles"
