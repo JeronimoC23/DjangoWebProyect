@@ -7,7 +7,9 @@
 
                 {%endif%}
                 <div class="data">
-                    <h2> {{article.title}} </h2>
+                    <h2> 
+                        <a href="{%url 'article' article.id%}">{{article.title}} </a>
+                     </h2>
                     <p>
                         {%for category in article.categories.all %}
                         
@@ -21,9 +23,6 @@
                     | 
                     Creado por {{article.user.first_name}} {{article.user.last_name}}
                     </span>
-                    <p> 
-                    {{article.content|safe}}
-                    </p>
                 </div>
                 <div class="clearfix"></div>
             </article>

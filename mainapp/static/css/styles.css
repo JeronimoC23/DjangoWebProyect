@@ -207,6 +207,23 @@ nav > ul > li:hover > ul>li:hover a{
     transition: 300ms all;
 
 }
+.box a{
+    color: #444
+}
+.box a:hover{
+    color:#0e4b33;
+    transition: 800ms;
+}
+.box .image{
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+}
+.box .image img{
+    width: 100%;
+    float: left;
+    margin-right: 40px;
+}
 .rojo{
     color:red;
     box-shadow: 0px,0px,0px,1px black;
