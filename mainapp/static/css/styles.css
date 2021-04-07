@@ -283,6 +283,14 @@ nav > ul > li:hover > ul>li:hover a{
     text-align: center;
     margin-bottom: 10px;
 }
+.warningmessage{
+    padding: 20px;
+    background-color: rgb(170, 16, 16);
+    color:black;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: larger;
+}
 .date{
     display: block;
     margin-top: 15px;

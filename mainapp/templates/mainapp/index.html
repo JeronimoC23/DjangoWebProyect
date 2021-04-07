@@ -13,7 +13,13 @@
         </div>
     {%endfor%}
 
-{% endif %}
 
+
+{% endif %}
+{%if user.last_name%}
+<h1> Welcome {{request.user.first_name}} {{user.last_name}} </h1>
+{%else%}
+<h2 class="rojo"> Login for more </h2> 
+{% endif %}
 {% endblock %}
 
